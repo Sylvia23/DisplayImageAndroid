@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    tools:context="com.example.sylvia.viewimage.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintVertical_bias="0.631" />
+
+
+    <Button android:id="@+id/buttonImageChooser"
+        android:layout_width="236dp"
+        android:layout_height="68dp"
+        android:onClick="gotoImageChooser"
+        android:text="@string/image_chooser"
+        tools:layout_editor_absoluteY="182dp"
+        tools:layout_editor_absoluteX="87dp" />
+    <Button android:id="@+id/buttonVideoChooser"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonImageChooser"
+        android:onClick="gotoVideoChooser"
+        android:text="@string/video_chooser"
+        tools:layout_editor_absoluteY="263dp"
+        tools:layout_editor_absoluteX="31dp" />
+
+
+    <TextView android:id="@+id/textViewVersion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPickFile"
+        android:gravity="center_horizontal"
+        android:text="@string/lab_version_string"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="40dp" />
+
+
+</android.support.constraint.ConstraintLayout>
+
